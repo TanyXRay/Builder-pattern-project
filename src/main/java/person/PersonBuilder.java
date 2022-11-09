@@ -1,4 +1,4 @@
-package persons;
+package person;
 
 /**
  * Класс билдер для класса Person

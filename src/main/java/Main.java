@@ -1,4 +1,5 @@
-import persons.*;
+import person.Person;
+import person.PersonBuilder;
 
 public class Main {
 

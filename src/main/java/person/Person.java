@@ -1,6 +1,6 @@
-package persons;
+package person;
 
-import utils.AgeIsZeroException;
+import util.exception.AgeIsZeroException;
 
 import java.util.Objects;
 
