@@ -20,9 +20,6 @@ public class PersonBuilder {
     }
 
     public PersonBuilder setAge(int age) {
-        if (age <= 0 || age > 120) {
-            throw new IllegalArgumentException("Недопустимый возраст!");
-        }
         this.age = age;
         return this;
     }
@@ -34,7 +31,7 @@ public class PersonBuilder {
 
     public Person build() {
         if (name == null || surname == null) {
-            throw new IllegalArgumentException("Не заполнены обязательные поля имени и фамилии!");
+            throw new IllegalStateException("Не заполнены обязательные поля имени и фамилии!");
         }
         return new Person(name, surname, age, address);
     }

@@ -16,6 +16,17 @@ public class Main {
                 .setAge(15)
                 .build();
         System.out.println("У " + mom + " есть сын, " + son);
+
+        try {
+            new PersonBuilder()
+                    .setName("NoName")
+                    .setSurname("NoSurname")
+                    .setAge(-100)
+                    .build();
+
+        }  catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        }
     }
 }
 
